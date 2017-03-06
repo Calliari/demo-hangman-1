@@ -53,5 +53,28 @@ var myGameArea = {
 
 
 
+    var words = ['madrid', 'italy', 'brazil'];
+
+    var getRandomWord = function () {
+      var word = words[Math.floor(Math.random() * words.length)];
+      console.log(word);
+      return word;
+
+    };
+
+    $(function() { // after page load
+      // for (var j = 0; j < word.length; j++){
+      //   console.log(word[j]);
+      // }
+
+      $('.textbox').append(getRandomWord());
+
+    });
+
+
+
+
+
+
   }
 };

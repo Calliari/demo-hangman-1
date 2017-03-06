@@ -3,8 +3,15 @@
 
 $(document).ready(function(){
 
+  var categories;         // Array of topics
+  var chosenCategory;     // Selected catagory
+  var getHint ;          // Word getHint
+  var word ;              // Selected word
+  var guess ;             // Geuss
   var geusses = [ ];      // Stored geusses
-  var words ;              // Selected word
+  var lives ;             // Lives
+  var counter ;           // Count correct geusses
+  var space;              // Number of spaces in word '-'
 
 
 
@@ -16,9 +23,9 @@ $(document).ready(function(){
 
 
   // keypad letters in for the guessingWord
-  var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
-    'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's',
-    't', 'u', 'v', 'w', 'x', 'y', 'z'];
+  var alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H',
+    'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S',
+    'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 
     // keypad in for the guessingWord
   for (var i = 0; i < alphabet.length; i++) {
@@ -29,26 +36,38 @@ $(document).ready(function(){
     $('.btn-group').append(letterButton);
 
   }
-  // put button in the inside div id="#hold"
+  // put button in the inside div id="#wrongLetterHold"
   $( 'button' ).click(function() {
-    $('#hold').append($(this).val());
+    $('#wrongLetterHold').append(' ',$(this).val(), ' ');
 
   });
   // ./ END keypad in for the guessingWord
 
+  var words = ['madrid', 'italy', 'brazil', 'a'];
+  word = words[Math.floor(Math.random() * words.length)];
+  word = word.toUpperCase(); // make all letters upper case
+  // make the words into dashes '-'
+  for (var j = 0; j < word.length; j++){
+    //console.log(word[j] = '- ');
+    $('.dashes').append(word[j] = '- ');
+    $('.textBox').append(word[j]); //delete later, this is only for testing
 
-  words = ['madrid', 'italy', 'brazil'];
+  }
 
-  var getRandomWord = function () {
-    var word = words[Math.floor(Math.random() * words.length)];
-    console.log(word);
-    return word;
 
-  };
+  //once you got all wrong letters, you lose
+// 	if(allWrongLetter === words.length){
+// 		window.alert("Uh...I guess you're dead now.");
+// 	}
+// }
 
-  $(function() { // after page load
-    $('.textbox').append(getRandomWord());
-  });
+
+
+  //$('.textbox').append(word);
+  //console.log(word);
+
+
+
 
 
 

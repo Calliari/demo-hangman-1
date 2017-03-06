@@ -25,10 +25,19 @@ body {
 .guessingWord {
   width: 450px;
   height: 50px;
-  margin: 310px 20px;
+  margin: 210px 20px;
   position: absolute;
   background-color: white;
   font-size: 32px;
+}
+
+#wrongLetterHold{
+  width: 450px;
+  height: 50px;
+  margin: 0px 0px;
+  position: absolute;
+  font-size: 32px;
+
 }
 
 .keypadBox {
