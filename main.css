@@ -31,12 +31,22 @@ body {
   font-size: 32px;
 }
 
-.keypad {
+.keypadBox {
   width: 450px;
   height: 170px;
   margin: 400px 20px;
   position: absolute;
   background-color: white;
   border: solid 1px #d3d3d3;
+
+}
+
+.btn-circle {
+  border-radius: 100%;
+}
+
+.btn-group{
+
+
 
 }
