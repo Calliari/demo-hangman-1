@@ -28,88 +28,83 @@
     <h2>Hangman-Game Project</h2>
   </div>
 
-  <div id="divPlayArea" class="center-block">
+  <div id="divPlayArea" class="center-block text-center">
 
     <div class="col-md-4">
-      <ul class="list-group">
-        <li class="list-group-item">
-          <span class="badge alert-info">10</span>
-          Questions
-        </li>
-        <li class="list-group-item">
-          <span class="badge alert-danger">3</span>
-          Used
-        </li>
-        <li class="list-group-item">
-          <span class="badge alert-warning">1</span>
-          Tries
-        </li>
-    </ul>
-    </div><!--/. END col-md-4 top left -->
+          <ul class="list-group">
+            <li class="list-group-item">
+              <span id="lives" class="badge alert-info"></span>
+              Lives
+            </li>
+            <li class="list-group-item">
+              <span id="wrongGuess" class="badge alert-danger"></span>
+              Wrong Guesses
+            </li>
+            <li class="list-group-item">
+              <span id="tries" class="badge alert-warning"></span>
+              Tries
+            </li>
+        </ul>
+        </div><!--/. END col-md-4 top left -->
 
-    <div class="col-md-4">
-      <ul class="list-group">
-        <li class="list-group-item ">
-          <span class="badge alert-success">7</span>
-          Score
-        </li>
-        <li class="list-group-item">
-          <span class="badge">2</span>
-          Revel
-        </li>
-      </ul>
-    </div><!--/. END col-md-4 top middle -->
+        <div class="col-md-4">
+          <ul class="list-group">
+            <li class="list-group-item ">
+              <span id="score" class="badge alert-success"></span>
+              Score
+            </li>
+          </ul>
+        </div><!--/. END col-md-4 top middle -->
 
-    <div class="text-right col-md-4">
-      <!-- Button trigger modal -->
-      <button type="button" name="button" class="btn btn-info btn-circle" data-toggle="modal" data-target="#myModal">
-        <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
-      </button>
-      <!-- Modal -->
-      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
-              <h4 class="modal-title text-center" id="myModalLabel">Hangman game instructions</h4>
-            </div>
-            <div class="modal-body text-left">
-              ...
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <div class="text-right col-md-4">
+          <!-- Button trigger modal -->
+          <button type="button" name="button" class="btn btn-info btn-circle" data-toggle="modal" data-target="#myModal">
+            <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                  <h4 class="modal-title text-center" id="myModalLabel">Hangman game instructions</h4>
+                </div>
+                <div class="modal-body text-left alert alert-info">
+
+                  <p> A secret word will be chosen automatically.
+                  The word will be converted into dashes, so the player can see how many letters at least, 'Hint'!
+                  The player tries to guess the word pressing one of the letters using the virtual keypad, once a time.
+                  If the player gets the wright letter it will revel from the dashes.
+                  If the player gets it wrong perts of the "hanman" will be drawing from every wrong guess.
+                  When the player guess it 6 times wrong the whole "hangman" body will be complete, so GAME OVER!
+                  And if the player complete the word with less than 6 wrong guesses the complete word will show
+                  and the player wins!
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <!--./END Modal -->
-      <button type="button" name="button" class="btn btn-danger btn-circle">
-        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
-      </button>
-    </div><!--/. END col-md-4 top right -->
+          <!--./END Modal -->
+          <button type="button" name="button" class="btn btn-danger btn-circle">
+            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+          </button>
+        </div><!--/. END col-md-4 top right -->
 
-    <div class="hangmanBox">
-      <p>Hangman box</p>
-      <img src="img/hangman-0.jpg" alt="">
+      <div class="hangmanBox">
+        <p>Hangman box</p>
+        <img src="img/hangman-0.jpg" alt="">
     </div><!--/. END hangmanBox right -->
 
 
-    <div class="guessingWord">
-      <p class="dashes"></p>
-      <p class="textBox"></p>
-      <div id="wrongLetterHold" class=""></div>
-    </div><!--/. END guessingWord box-->
+    <div id="word" class="guessingBox"></div>
+    <div id="alpha" class="keypadBox"></div>
 
 
-    <div class="keypadBox">
-      <div class="btn-group">
-      </div>
-    </div><!--/. END keyborad pad box-->
 
-
-  </div>
-
-<button>Click me to hide paragraphs</button>
+</div>  <!--./END of the play area-->
 
 
 </body>

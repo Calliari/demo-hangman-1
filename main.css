@@ -1,7 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: grey;
+    background-color: #A8A8A8 ;
+    font-family: monospace;
 }
 
 #divPlayArea {
@@ -10,6 +11,22 @@ body {
   background-color: #f1f1f1;
   border:2px solid #d3d3d3;
 
+}
+
+.correct {
+  background-color: green;
+  color: white;
+  width: 60px;
+  height: 40px;
+  font-size: 28px;
+}
+
+.incorrect {
+  background-color: red;
+  color: white;
+  width: 60px;
+  height: 40px;
+  font-size: 28px;
 }
 
 .hangmanBox {
@@ -22,40 +39,38 @@ body {
 
 }
 
-.guessingWord {
-  width: 450px;
-  height: 50px;
-  margin: 210px 20px;
-  position: absolute;
-  background-color: white;
-  font-size: 32px;
-}
-
-#wrongLetterHold{
-  width: 450px;
-  height: 50px;
-  margin: 0px 0px;
-  position: absolute;
-  font-size: 32px;
-
-}
-
 .keypadBox {
+  font-family: monospace;
   width: 450px;
   height: 170px;
-  margin: 400px 20px;
+  margin: 346px 24px;
   position: absolute;
   background-color: white;
   border: solid 1px #d3d3d3;
 
 }
 
-.btn-circle {
-  border-radius: 100%;
+.guessBtn {
+  background-color: black;
+  color: white;
+  width: 60px;
+  height: 40px;
+  font-size: 28px;
 }
 
-.btn-group{
+.guessingBox{
+  position: absolute;
+  background-color: white;
+  margin: 180px 40px;
+  width: 430px;
+  height: 50px;
 
+}
+.letter{
+  font-size: 27px;
+  font-family: monospace;
+}
 
-
+.badge{
+  font-size: 20px;
 }
