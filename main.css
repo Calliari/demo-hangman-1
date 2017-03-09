@@ -161,3 +161,18 @@ h1 {
     from, to { border-color: transparent }
     50% { border-color: black }
 }
+
+h2 {
+  margin: 10px 200px;
+  color: rgba(0, 0, 0, 0.39);
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.47);
+  font-family: 'Denk One', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 3em;
+
+  /*width:16.3em;
+  white-space:nowrap;
+  overflow:hidden;
+  border-right: .1em solid black;*/
+}

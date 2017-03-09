@@ -25,7 +25,9 @@ $(document).ready(function() {
 
   function hangman() {
 
-    var words = ['MADRID','BRASILIA','ROME']; // array of words
+    var words = ['MADRID','BRASILIA','ROME','LONDON', 'WASHINGTON',
+      'CANBERRA', 'LISBON', 'PARIS', 'OTTAWA', 'BERLIN', 'BERN', 'EDINBURGH']; // array of words
+
     var word = pickRandomArrayElement(words);  // pick word random
 
     var alpha = ['A', 'B', 'C', 'D', 'E', 'F',

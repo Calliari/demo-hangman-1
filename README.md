@@ -1,27 +1,17 @@
 # sg-project-1
-Sparta project 1
+Sparta Game project 1
 
-angular-spa-demo [![Click here to play Status](https://travis-ci.org/mcalthrop/angular-spa-demo.svg?branch=master)](https://travis-ci.org/mcalthrop/angular-spa-demo)
-================
-
-Demo code for a Single Page Application using AngularJS.
 
 ## Purpose
 
-This is a sample HTML5 / JS / CSS SPA (Single Page Application) developed with AngularJSß.
+This is a sample game using HTML, HTML5 , JS , CSS (Single Page Web Application).
 
-Markup has been styled to be responsive, according to the device used to view the app.
+This project is intended as a demonstration of technical capabilities rather than design or helpful data., usinng the tecnologies discribed above.
 
-It is intended as a demonstration of technical capabilities rather than design or helpful data. :-)
-
-Note also that it is a work in progress; you can check out what features are in the pipeline in the [issues](#issues) list.
 
 ## Functionality
 
-This is a simple application that displays several pages, including profile information for a list of people.
-
-The sample data is contrived, but shows how the data is stored in JSON format, retrieved via AJAX,
-and inserted into HTML templates.
+This is a simple application uses sounds, css styles for diferent
 
 ## Implementation
 
