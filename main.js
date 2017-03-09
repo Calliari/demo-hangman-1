@@ -5,6 +5,10 @@ $(document).ready(function() {
   $('#wrongGuess').text( 0 );
   $('#score').text(0 + '%');
 
+  var clickOk = $('#clickOk')[0];  // sounds for buttons when is ok guessing
+  var clickError = $('#clickError')[0];  //sounds for buttons when is error guessing
+
+
   function numberOfLettersUnsolved() {
     return $('#word .unsolved').length;
   }
@@ -49,19 +53,16 @@ $(document).ready(function() {
       if (count > 0){
         $(this).removeClass('guessBtn').addClass('correct');  // remove a class and add css color green
 
-        score = 100 / word.length;//score
+        clickOk.play();
+
 
       } else {
         $(this).removeClass('guessBtn').addClass('incorrect').unbind('click'); // remove a class and add css color red
 
-        // if (lives === 0){
-        //   alert('Game Over');
-        //
-        // }else{
         lives--; // take 1 from the lives when wrong letter is guessed
         wrongGuess++; // counting player's tries (+ 1)
 
-        //}
+        clickError.play();
 
       }
       tries++; // counting the tries of guessing
@@ -91,7 +92,7 @@ $(document).ready(function() {
         alert('Game Over!');
 
       }
-  
+
       // debugging tool ################################################ß
 
       console.log('--------------');
