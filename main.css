@@ -176,3 +176,16 @@ h2 {
   overflow:hidden;
   border-right: .1em solid black;*/
 }
+.modal-body {
+  background-image: url(img/backgroundPapper.jpg);
+  box-shadow: 0 0 20px 20px black;
+}
+p{
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+}
+.h4, h4 {
+    font-size: 24px;
+    text-shadow: 0 0 4px black;
+    box-shadow: inset 0 0 11px 4px black;

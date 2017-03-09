@@ -1,5 +1,5 @@
-# sg-project-1
-Sparta Game project 1
+##sg-project-1
+Sparta Game project 1 - Hangman game
 
 
 ## Purpose
@@ -66,7 +66,7 @@ The github issue system holds the issues for this project:
 * [enhancements](https://github.com/mcalthrop/angular-spa-demo/labels/enhancement)
 * [investigate](https://github.com/mcalthrop/angular-spa-demo/labels/investigate)
 
-## Demo site
+## Demo site 
 http://mcalthrop.github.io/angular-spa-demo/
 
-This site is kept up to date with the latest code in the codebase.
+
