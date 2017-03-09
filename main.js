@@ -1,9 +1,10 @@
 $(document).ready(function() {
 
-  $('#lives').text( 3 );
+  $('#lives').text( 10 );
   $('#tries').text( 0 );
   $('#wrongGuess').text( 0 );
   $('#score').text(0 + '%');
+  $('#hangmanImg').attr('src', 'img/hangman-'+0+'.jpg');
 
   var clickOk = $('#clickOk')[0];  // sounds for buttons when is ok guessing
   var clickError = $('#clickError')[0];  //sounds for buttons when is error guessing
@@ -64,6 +65,10 @@ $(document).ready(function() {
 
         clickError.play();
 
+        // $('#hangmanImg').append('<img id="' + word[j] + '">');
+
+
+
       }
       tries++; // counting the tries of guessing
 
@@ -72,6 +77,7 @@ $(document).ready(function() {
         $('#wrongGuess').text( wrongGuess );
         $('#score').text( score + '%' );
         $('#lives').text( lives );
+        $('#hangmanImg').attr('src', 'img/hangman-'+wrongGuess+'.jpg');
 
       }
       updateScores();
