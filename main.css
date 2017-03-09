@@ -39,17 +39,6 @@ body {
 
 }
 
-.keypadBox {
-  font-family: monospace;
-  width: 450px;
-  height: 170px;
-  margin: 346px 24px;
-  position: absolute;
-  background-color: white;
-  border: solid 1px #d3d3d3;
-
-}
-
 .guessBtn {
   background-color: black;
   color: white;
@@ -58,14 +47,64 @@ body {
   font-size: 28px;
 }
 
+.message{
+  position: absolute;
+  margin: 200px 40px;
+  width: 430px;
+  height: 50px;
+  /*background-color: white;
+  border: solid 1px #d3d3d3;*/
+
+}
+
 .guessingBox{
   position: absolute;
   background-color: white;
-  margin: 180px 40px;
+  margin: 300px 40px;
   width: 430px;
   height: 50px;
+  border: solid 1px #d3d3d3;
 
 }
+
+.keypadBox {
+  font-family: monospace;
+  width: 450px;
+  height: 170px;
+  margin: 396px 24px;
+  position: absolute;
+  background-color: white;
+  border: solid 1px #d3d3d3;
+
+}
+.keypadBoxH :hover {
+  animation-name: pulse_animation;
+	animation-duration: 2000ms;
+	transform-origin:40% 40%;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+  background-color: white;
+  color: black;
+
+}
+@keyframes pulse_animation {
+	0% { transform: scale(1); }
+	30% { transform: scale(1); }
+	40% {
+    transform: scale(1.48);
+    background-color: green;
+
+  }
+	50% { transform: scale(1); }
+	60% { transform: scale(1); }
+	70% {
+    transform: scale(1.45);
+    background-color: red;
+  }
+	80% { transform: scale(1); }
+	100% { transform: scale(1); }
+}
+
 .letter{
   font-size: 27px;
   font-family: monospace;
