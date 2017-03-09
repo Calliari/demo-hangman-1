@@ -77,19 +77,26 @@ $(document).ready(function() {
       updateScores();
 
       if (isHangmanSolved()) {
-        alert('Congratulations, you have SOLVED it!');
-        $('#messageBox').text('Congratulations!!');
+        // alert('Congratulations, you have SOLVED it!');
+        $('#messageBox').append('<h1>Congratulations!!</h1>');
+        $('#alpha').removeClass('keypadBoxH');
+        $('button').attr('disabled', 'disabled');
+
 
       }else if(lives === 0){
         $('#lives').text('Dead!!!');
-        $('#messageBox').text('You are Dead Now!!');
+        $('#messageBox').append('<h1>You are Dead Now!!</h1>');
+
+
+
+
         $('#alpha').removeClass('keypadBoxH');
         $('button').attr('disabled', 'disabled');
 
 
 
         // $('#alpha button').removeClass('keypadBox :hover').addClass('disabled');
-        alert('Game Over!');
+        // alert('Game Over!');
 
       }
 

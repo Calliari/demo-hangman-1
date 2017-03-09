@@ -1,14 +1,18 @@
+@import url(http://fonts.googleapis.com/css?family=Denk+One);
+
 body {
     margin: 0;
     padding: 0;
-    background-color: #A8A8A8 ;
-    font-family: monospace;
+    /*background-color: #A8A8A8 ;*/
+    font-family: Consolas, monospace;
+    background-image: url(img/backgroundPapper.jpg);
+
 }
 
 #divPlayArea {
-  width: 800px;
+  width: 990px;
   height: 600px;
-  background-color: #f1f1f1;
+  background-color: rgba(241, 241, 241, 0.32);
   border:2px solid #d3d3d3;
 
 }
@@ -36,6 +40,7 @@ body {
   position: absolute;
   background-color: white;
   border: solid 1px #d3d3d3;
+  background-image: url(img/hangman.png);
 
 }
 
@@ -112,4 +117,47 @@ body {
 
 .badge{
   font-size: 20px;
+}
+
+
+/*http://jsfiddle.net/leaverou/y8kNx/*/
+/*This is the souce of the letter that appearing ther top using h1 tag*/
+h1 {
+  margin: 10px 200px;
+  color: rgba(0, 0, 0, 0.39);
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.47);
+  font-family: 'Denk One', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 5em;
+
+  width:16.3em;
+  white-space:nowrap;
+  overflow:hidden;
+  border-right: .1em solid black;
+
+  -webkit-animation: typing 17s steps(30, end), /* # of steps = # of characters */
+                      blink-caret 1s step-end infinite;
+  -moz-animation: typing 17s steps(30, end), /* # of steps = # of characters */
+                      blink-caret 1s step-end infinite;
+}
+
+@-webkit-keyframes typing {
+    from { width: 0 }
+    to { width:16.3em }
+}
+
+@-moz-keyframes typing {
+    from { width: 0 }
+    to { width:16.3em }
+}
+
+@-webkit-keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
+@-moz-keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
 }

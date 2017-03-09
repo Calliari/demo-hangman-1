@@ -32,6 +32,10 @@
     <source src="backgrounSound.mp3" type="audio/mpeg">
   </audio>
 
+  <audio id="heartSound" autoplay loop>
+    <source src="heartbeat-01a.mp3" type="audio/mpeg">
+  </audio>
+
 
   <audio id="clickOk">
     <source src="clickSound.mp3" type="audio/mpeg">
@@ -42,8 +46,8 @@
   </audio>
 
 
-  <div class="text-center">
-    <h2>Hangman-Game Project</h2>
+  <div id="hangTitle" class="text-center">
+    <h1 class="hangTitle">Hangman-Game Project</h1>
   </div>
 
   <div id="divPlayArea" class="center-block text-center">
@@ -87,7 +91,7 @@
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
                   <h4 class="modal-title text-center" id="myModalLabel">Hangman game instructions</h4>
                 </div>
-                <div class="modal-body text-left alert alert-info">
+                <div class="modal-body text-left alert alert-danger">
 
                   <p> A secret word will be chosen automatically.
                   The word will be converted into dashes, so the player can see how many letters at least, 'Hint'!
@@ -113,10 +117,12 @@
 
       <div class="hangmanBox">
         <p>Hangman box</p>
-        <img src="img/hangman-0.jpg" alt="">
+        <img src="" alt="">
     </div><!--/. END hangmanBox right -->
 
-    <div id="messageBox" class="message"></div>
+    <div id="messageBox" class="message">
+
+    </div>
     <div id="word" class="guessingBox"></div>
     <div id="alpha" class="keypadBox"></div>
 
