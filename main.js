@@ -83,17 +83,15 @@ $(document).ready(function() {
         $('#lives').text('Dead!!!');
         $('#messageBox').text('You are Dead Now!!');
         $('#alpha').removeClass('keypadBoxH');
-
-
         $('button').attr('disabled', 'disabled');
 
+
+
         // $('#alpha button').removeClass('keypadBox :hover').addClass('disabled');
-        alert('Game Over test!');
+        alert('Game Over!');
 
       }
-
-
-
+  
       // debugging tool ################################################ß
 
       console.log('--------------');

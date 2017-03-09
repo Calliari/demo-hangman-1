@@ -17,12 +17,21 @@
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js" charset="utf-8"></script>
   <!-- Connect my own mian.js with HTML -->
   <script src="main.js" charset="utf-8"></script>
+
   <!-- <link rel="stylesheet" href="main.css"> -->
   <link rel="stylesheet" href="main.css">
+
+  <!-- <embed src="backgrounSound.mp3" height="90" loop="true" autostart="true" hidden="true" /> -->
+
 
 <title>SG Project 1</title>
 </head>
 <body>
+
+  <audio id="sound" autoplay loop>
+    <source src="backgrounSound.mp3" type="audio/mpeg">
+  </audio>
+
 
   <div class="text-center">
     <h2>Hangman-Game Project</h2>
@@ -48,12 +57,12 @@
         </div><!--/. END col-md-4 top left -->
 
         <div class="col-md-4">
-          <ul class="list-group">
+          <!-- <ul class="list-group">
             <li class="list-group-item ">
               <span id="score" class="badge alert-success"></span>
               Score
             </li>
-          </ul>
+          </ul> -->
         </div><!--/. END col-md-4 top middle -->
 
         <div class="text-right col-md-4">
@@ -103,8 +112,9 @@
     <div id="alpha" class="keypadBox"></div>
 
 
-
 </div>  <!--./END of the play area-->
+
+
 
 
 </body>
