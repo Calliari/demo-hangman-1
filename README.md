@@ -1,6 +1,5 @@
 ##demo-hangman-1
-Sparta Game project 1 - Hangman game
-
+My first game project 1 - Hangman game
 
 ## Purpose
 
