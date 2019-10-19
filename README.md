@@ -39,16 +39,14 @@ npm install
 
 ### Viewing the docs
 
-On github
+- On github
 
 https://github.com/Calliari/demo-hangman-1
 
 
 ## Demo site
 
-On heroku
-
+- On heroku
 https://demo-hangman-1.herokuapp.com/
-
 
 There is a pipeline on heroku that would trigger the CI automatically once a push is detect on stage branch. Afther the CI is built a Pull Request from 'stage' into 'master' need to be made, then finally a manual deploy using a heroku console is required to made the app available on https://demo-hangman-1.herokuapp.com URL.
