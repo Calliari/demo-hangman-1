@@ -1,7 +1,7 @@
 {
-  "name": "sg-project-1",
+  "name": "demo-hangman-1",
   "version": "1.0.0",
-  "description": "Sparta Global Project 1",
+  "description": "Personal project my first game",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Calliari/sg-project-1.git"
+    "url": "git+https://github.com/Calliari/demo-hangman-1.git"
   },
   "author": "jrcalliari@me.com",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Calliari/sg-project-1/issues"
+    "url": "https://github.com/Calliari/demo-hangman-1/issues"
   },
-  "homepage": "https://github.com/Calliari/sg-project-1#readme",
+  "homepage": "https://github.com/Calliari/demo-hangman-1#readme",
   "engines": {
     "node": "6.8.0",
     "npm": ">=3"

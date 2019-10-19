@@ -1,12 +1,12 @@
 {
-  "name": "sg-project-1",
-  "description": "Sparta Global Project 1",
+  "name": "demo-hangman-1",
+  "description": "Personal project my first game demo-hangman-1",
   "main": "index.js",
   "authors": [
     "jrcalliari@me.com"
   ],
   "license": "ISC",
-  "homepage": "https://github.com/Calliari/sg-project-1",
+  "homepage": "https://github.com/Calliari/demo-hangman-1",
   "ignore": [
     "**/.*",
     "node_modules",

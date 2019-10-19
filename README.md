@@ -1,4 +1,4 @@
-##sg-project-1
+##demo-hangman-1
 Sparta Game project 1 - Hangman game
 
 
@@ -41,11 +41,11 @@ npm install
 
 On github
 
-https://github.com/Calliari/sg-project-1
+https://github.com/Calliari/demo-hangman-1
 
 
 ## Demo site
 
 On heroku
 
-https://calliari-sg-project-1.herokuapp.com/
+https://demo-hangman-1.herokuapp.com/
