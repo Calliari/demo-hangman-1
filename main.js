@@ -58,7 +58,6 @@ $(document).ready(function() {
 
         clickOk.play();
 
-
       } else {
         $(this).removeClass('guessBtn').addClass('incorrect').unbind('click'); // remove a class and add css color red
 
@@ -66,10 +65,6 @@ $(document).ready(function() {
         wrongGuess++; // counting player's tries (+ 1)
 
         clickError.play();
-
-        // $('#hangmanImg').append('<img id="' + word[j] + '">');
-
-
 
       }
       tries++; // counting the tries of guessing
@@ -90,21 +85,11 @@ $(document).ready(function() {
         $('#alpha').removeClass('keypadBoxH');
         $('button').attr('disabled', 'disabled');
 
-
       }else if(lives === 0){
         $('#lives').text('Dead!!!');
         $('#messageBox').append('<h1>You are Dead Now!!</h1>');
-
-
-
-
         $('#alpha').removeClass('keypadBoxH');
         $('button').attr('disabled', 'disabled');
-
-
-
-        // $('#alpha button').removeClass('keypadBox :hover').addClass('disabled');
-        // alert('Game Over!');
 
       }
 
